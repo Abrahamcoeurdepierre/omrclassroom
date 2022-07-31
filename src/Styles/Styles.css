@@ -1,0 +1,608 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-variation-settings: 'slnt' 0;
+    font-family: 'Inter';
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color:#F4FFFDFF;
+}
+
+.loginCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin-top: 70px;
+}
+.loginCard svg{
+    width: 140px;
+    margin-bottom: 30px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.row img{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.finalRow{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginBtns{
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.forgot{
+    margin-top: 70px;
+    justify-content: end;
+    align-items: center;
+}
+
+.loginCard input, select {
+    border: solid #174277 1px;
+    height: 35px;
+    width: 320px;
+}
+input:focus {
+outline: none;
+}
+.forgotPass{
+    font-size: 13px;
+    margin-right: 20px;
+    color: #011936;
+}
+
+.loginCard button{
+    width: 70px;
+    height: 35px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    font-variation-settings: 'slnt' 0;
+    font-family: 'Inter';
+}
+
+.yellow{
+    background-color:#F9DC5C;
+    color: #011936;
+}
+.blue{
+    background-color:#011936;
+    color: #F9DC5C;
+}
+
+.link{
+    text-decoration: none;
+}
+
+
+
+.sidebar{
+    height: 100vh;
+    width: 250px;
+    background-color: #011936;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 8px 8px 0px;
+    align-items: center;
+}
+
+
+.sidebar .navLinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding-top: 5px;
+    color: #fefefe;
+    font-size: small;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.sidebar .lists{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    align-items: center;
+}
+
+.sidebar svg{
+    width: 140px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.navLinks img{
+    width: 20px;
+    height: 20px;
+    margin-right:10px ;
+    margin-left: 10px;
+}
+
+.userLink{
+    width: 100%;
+}
+
+.dropdown{
+    margin-left: 100px;
+    margin-bottom: 5px;
+    transform: rotate(180deg);
+
+}
+
+.true{
+    visibility:hidden ;
+}
+.false{
+    visibility: visible;
+    display: block;
+}
+
+.error{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 320px;
+    color: rgb(0, 0, 0);
+    font-weight:200;
+    font-size: medium;
+    background-color: tomato; 
+  }
+.floatRight{
+    justify-content: flex-end;
+}
+.buttonSign{
+    display: flex;
+    width: 70px;
+    height: 35px;
+    font-size: 10px;
+    font-variation-settings: 'slnt' 0;
+    font-family: 'Inter';
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mainFrame{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 95vh;
+    overflow-y: scroll;
+}
+
+.topBar{
+    width: 100%;
+    height: 14vh;
+    background-color:  #F4FFFD;
+    box-shadow:  rgba(0, 0, 0, 0.27) 0px 0px 13px
+}
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: small;
+}
+
+.dashboard button{
+    width: 70px;
+    height: 35px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    font-variation-settings: 'slnt' 0;
+    font-family: 'Inter';
+}
+
+.subjectsDash{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 85vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+
+.subject{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 170px;
+    background: #F4FFFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 30px 30px 0px 0px;
+}
+
+.subject .empty{
+    width: 100%;
+    height: 70%;
+    border-bottom: 2px solid #CECECE;
+}
+
+.subject .subjectOptions{
+    color: #011936;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+.subjectOptions p{
+    width: 70%;
+    font-size: small;
+}
+.subjectOptImages img{
+    width: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.subjectOptImages {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.hidden{
+    display: none;
+}
+.notHidden{
+    display: flex;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+
+}
+
+.popupCard{
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #F4FFFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.popupCard button{
+    width: 70px;
+    height: 35px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    background: linear-gradient(0deg, #ED254E, #ED254E), #FFFFFF;
+}
+
+.popupCard .buttons{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+}
+
+.popupCard p{
+    cursor: pointer;
+    margin-right: 50px;
+}
+.popupCard h3{
+    font-size: small;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.popupCard h5{
+    font-size: small;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.49);
+    font-variation-settings: 'slnt' 0;
+    font-family: 'Inter';
+    font-style: normal; 
+}
+
+.rowStudent{    
+    display: flex;
+    flex-direction: row;
+}
+
+.rowStudent p:nth-child(1), .header p:nth-child(1){
+    width: 20%;
+}
+.rowStudent p:nth-child(2), .header p:nth-child(2){
+    width: 60%;
+}
+.rowStudent p:nth-child(3), .header p:nth-child(3){
+    width: 20%;
+}
+
+.rowStudent p {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: #011936 solid 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.table{
+    width: 80%;
+    border: 1px solid #011936;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.table img{
+    width: 20px;
+    height: 20px;
+}
+
+.rowStudent .img{
+    justify-content: space-around;
+}
+
+.header{
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbarInputs, .inputName , .inputId{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inputName, .inputId, .topbarInputs button{
+    margin-left: 20px;
+}
+
+.inputName input, .inputId input{
+    height: 20px;
+    border-radius: 9px;
+    border: #011936 solid 1px;
+}
+
+.inputId p, .inputName p{
+    margin-right: 10px;
+}
+.topbarName{
+    display: flex;
+    align-items: center;
+}
+.topbarName .arrowLeft{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.form{
+    width: 100%;
+}
+
+.popupCard .update{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.middle{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    color: #011936;
+    text-decoration: none;
+}
+
+.logout{
+    width: 100px;
+    height: 50px;
+    color: #CECECE;
+    cursor: pointer;
+}
+.rowAns{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 80%;
+    justify-content: space-between;
+}
+.rowAns input{
+    width: 100px;
+    margin-right: 10px;
+}
+.rowAns input::placeholder{
+    color: #d3d3d3;
+}
+
+.examName{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.examName input{
+    margin-left: 10px;
+    width: 240px;
+    height: 40px;
+}
+
+.columnInput{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+}
+
+.instructions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid #011936 1px;
+    box-shadow:  rgba(0, 0, 0, 0.27) 0px 0px 13px
+}
+
+.btnScan{
+    background-color: #ED254E;
+    color: #011936;
+    width: 150px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnScan:hover{
+    background-color: #011936;
+    color:#F9DC5C
+}
+
+.btnDivScan{
+    width: 80%;
+    margin: auto;
+}
+
+.active p{
+    color:#F9DC5C
+}
+
+.empty:hover{
+    background-color: #F9DC5C;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.checkPass{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 320px;
+    color: rgb(0, 0, 0);
+    font-weight:200;
+    font-size: medium;
+    background-color: rgb(71, 255, 111); 
+}
+
+.forgotRow{
+    width: 320px;
+    margin-left:40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.importCSV{
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.width{
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.btnImport{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
